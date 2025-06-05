@@ -1,7 +1,16 @@
-function sq(x , y){
-    let and=0;
-    and=x+x
-    console.log("The square of the number is: " + and);
-    return and;
+function A(x,abc,pqr){
+    let ans=0;
+ans=x*x;
+console.log(ans)
+abc(pqr);
+return ans;
 }
-sq(5,6);
+function B(bcd){
+    console.log("Function B running successfully")
+    bcd();
+}
+function C (){
+    console.log("Function C running successfully")
+    
+}
+A(2,B,C);
